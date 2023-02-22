@@ -1,5 +1,5 @@
 # author @andrwclnln
-# v1.0
+# v1.1
 # feb 2023
 # a lil discord bot so that our hamster can join the fun
 
