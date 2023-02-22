@@ -1,2 +1,9 @@
 # ignore environment variables
 .env
+
+# ignore artifacts from gif making
+*.png
+*.mp4
+
+#ignore videos directory
+videos/

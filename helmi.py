@@ -25,7 +25,7 @@ async def helmi(ctx):
     helmiMessages = [
     'squeak!',
     'squeaksqueak',
-    'sqeuaksqueaksqueak',
+    'squeaksqueaksqueak',
     '*chatter*',
     '*bite*',
     '*bites toe*',
@@ -34,5 +34,24 @@ async def helmi(ctx):
 
     response = random.choice(helmiMessages)
     await ctx.send(response)
+
+@client.command(name='give')
+async def give(ctx,arg):
+    if arg == 'coriander':
+        with open('images/coriander.gif', "rb") as file:
+            fileToSend = discord.File(file, filename='images/coriander.gif')
+        await ctx.send(file=fileToSend)
+    elif arg == 'water':
+        with open('images/water.gif', "rb") as file:
+            fileToSend = discord.File(file, filename='images/water.gif')
+        await ctx.send(file=fileToSend)
+    elif arg == 'cucumber':
+        with open('images/cucumber.gif', "rb") as file:
+            fileToSend = discord.File(file, filename='images/cucumber.gif')
+        await ctx.send(file=fileToSend)
+    elif arg == 'cheddars':
+        with open('images/cheddars.gif', "rb") as file:
+            fileToSend = discord.File(file, filename='images/cheddars.gif')
+        await ctx.send(file=fileToSend)
 
 client.run(TOKEN)
