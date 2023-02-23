@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  detolf:
+    image: detolf:latest
+    container_name: detolf
+    restart: always
+    build:
+      dockerfile: Dockerfile
