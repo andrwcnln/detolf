@@ -6,4 +6,5 @@ services:
     container_name: detolf
     restart: always
     build:
+      context:
       dockerfile: Dockerfile
