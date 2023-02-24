@@ -1,10 +1,11 @@
-version: "3"
+version: "2.4"
 
 services:
   detolf:
+    platform: "linux/arm64/v8"
     image: detolf:latest
     container_name: detolf
     restart: always
     build:
-      context:
+      context: build
       dockerfile: Dockerfile
